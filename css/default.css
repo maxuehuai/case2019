@@ -1,0 +1,64 @@
+
+.none {
+    display: none;
+	width: 100%;
+	width: 100%;
+}
+
+#video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    index: 1;
+}
+
+#debug {
+    position: absolute;
+    top: 0;
+    left: 0;
+    index: 1000;
+    color: #FF0000;
+}
+
+.footer {
+    position: fixed;
+    bottom: 10px;
+
+    width: 100%;
+    text-align: center;
+
+    z-index: 100000;
+}
+
+.footer2 {
+    position: fixed;
+    bottom: 10px;
+
+    width: 100%;
+    text-align: center;
+
+    z-index: 100000;
+}
+
+.myimg
+{
+     -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.myimg2
+{
+   pointer-events:none;
+}
+
+
+
+.mainCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+}

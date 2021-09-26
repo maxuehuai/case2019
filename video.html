@@ -1,0 +1,53 @@
+﻿
+<html lang="en">	
+<head>
+<meta charset="UTF-8">
+<title>魔立数码科技</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" type="text/css" href="css/default.css" />
+<script language="javascript">
+
+function getQueryString(name) {  
+    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");  
+    var r = window.location.search.substr(1).match(reg); 
+    var context = "";  
+    if (r != null)  
+         context = r[2];  
+    reg = null;  
+    r = null;  
+    return context == null || context == "" || context == "undefined" ? "" : context;
+}
+
+</script>
+</head>
+	
+<body>	
+
+<div>
+	<video muted id="videoSource" width="400px" >
+		<source src="video/VR_Fitting.mp4" type="video/mp4">
+	</video>
+</div>
+
+
+<script language="javascript">
+var video = document.querySelector("video");
+var url = getQueryString("url");
+if(url!=null&&url!=""){
+video.controls=true;
+
+var sWith = window.screen.width;
+
+if(sWith>600){
+sWith=600;
+}
+
+video.setAttribute("width", sWith+'px'); 
+video.setAttribute("src", url); 
+//video.play();
+video.autoplay = "autoplay";
+}
+
+</script>
+</body>
+</html>
